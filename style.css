@@ -143,20 +143,29 @@ ul {
 }
 
 /* Botón de sortear título */
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espacio entre los botones */
+}
+
 .button-draw {
     display: flex;
     align-items: center;
-    width: 100%;
-    padding: 10px 40px;
+    justify-content: center;
+    gap: 8px; /* Espacio entre el ícono y el texto */
+    width: auto; /* Ajusta el ancho de los botones */
+    padding: 10px 20px; /* Reduce el padding horizontal */
     color: var(--color-white);
     background-color: var(--color-button);
     font-size: 16px;
+    text-decoration: none; /* Quita el subrayado del enlace */
 }
 
 .button-draw img {
-    margin-right: 40px;
+    margin-right: 8px; /* Reduce el margen derecho del ícono */
 }
 
 .button-draw:hover {
     background-color: var(--color-button-hover);
-}
+}   
